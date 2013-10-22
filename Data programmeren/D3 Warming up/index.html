@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Warming up</title>		
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>				
+	<div id="container">
+		<div id="img"></div><div id="divCoord">ljs</div>
+	</div>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.6.0.min.js"></script>
+	<script defer>
+		var width = 800;
+		var height = 600;
+		var tempX = 200;
+		var tempY = 200;
+
+		document.onmousemove = setValues;
+		window.setInterval(function(){
+			drawIt();
+		}, 250);
+		
+		function setValues(e)
+		{
+			tempX = e.pageX;
+			tempY = e.pageY;
+			document.getElementById('divCoord').innerHTML = tempX + '-' + tempY;
+		}
+
+		function drawIt()
+		{
+
+			var stage = new Kinetic.Stage({
+			  container: 'img',
+			  width: width,
+			  height: height
+			});
+	
+			var layer = new Kinetic.Layer();
+	
+			var points = [];
+			for (var i = 0; i < (tempY); i++) {
+			  points.push({
+				x: ((Math.random()) * (width / 2) + (width / 4)),
+				y: (tempY - (Math.random()) * i)
+			  });
+			}
+	
+			var spline = new Kinetic.Spline({
+			  points: points,
+			  stroke: '#fff',
+			  opacity: 0.5,
+			  strokeWidth: 0.75,
+			  lineCap: 'round',
+			  tension: 1
+			});
+	
+			layer.add(spline);
+			stage.add(layer);
+	
+			spline.transitionTo({
+			  tension: 3,
+			  opacity: 0.75,
+			  strokeWidth: 0.5,
+			  duration: 5,
+			  easing: 'ease-in-out'
+			});
+		
+		}
+	</script>
+</body>
+</html>

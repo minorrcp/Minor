@@ -1,0 +1,65 @@
+body
+{
+	background: #aaa;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -270px 0 0 -270px;
+	padding: 20px;
+	width: 500px;
+	height: 500px;
+	background: #fff;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.title
+{
+	color: #999;
+	font-size: 26px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.title .active
+{
+	color: #000;
+}
+.title #leftButton
+{
+	cursor: pointer;
+	float: left;
+}
+.title #rightButton
+{
+	cursor: pointer;
+	float: right;
+}
+.legenda
+{
+	positionn: relative;
+	width: 100%;
+	text-align: center;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+ul li
+{
+	padding: 0 6px;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	float: left;
+	list-style-type: none;
+}
+ul li span
+{
+	position: relative;
+	margin-right: 6px;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+}

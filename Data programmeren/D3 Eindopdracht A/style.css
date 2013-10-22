@@ -1,0 +1,79 @@
+body
+{
+	background: #aaa;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -270px 0 0 -400px;
+	padding: 20px;
+	width: 800px;
+	height: 500px;
+	background: #fff;
+	border-radius: 20px;
+}
+.title
+{
+	color: #000;
+	font-size: 26px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.legenda
+{
+	positionn: relative;
+	width: 100%;
+	text-align: center;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+ul li
+{
+	padding: 0 6px;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	float: left;
+	list-style-type: none;
+}
+ul li span
+{
+	position: relative;
+	margin-right: 6px;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.line {
+  fill: none;
+  stroke: #2a77b6;
+  stroke-width: 1.5px;
+}
+.line2 {
+  fill: none;
+  stroke: #9068c0;
+  stroke-width: 1.5px;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
