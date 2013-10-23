@@ -25,10 +25,11 @@ $.each(itemList[0], function(key,value) {
 					text: value.toeristen_tekst,
 					weatherCode: value.yahooweatherCode,
 					fact1: value.fact1,
-					fact2: value.fact2
+					fact2: value.fact2,
+                    comp: value.comparison
 				}
 
-/* 				console.log(itemData); */
+//				console.log(itemData);
 
 				Application.createItem(i,itemData);
 
@@ -43,15 +44,22 @@ $.each(itemList[0], function(key,value) {
 Application.getData(0);
 document.onkeydown = keyPressed;
 
+$("#slide_comp").click(function(){
+    event.preventDefault();
+    $(".comp").slideToggle();
+//    console.log('slide');
+});
+
 /* FUNCTIONS */
 /**
  * @param e
  */
 function keyPressed(e) {
+    $(".comp").slideUp();
 	e = e || window.event;
 	if (e.keyCode == '37') {
 		Application.nextItem('left');
-        crossFade(".information");
+//        getDataFade(".information");
 	}
 	else if (e.keyCode == '39') {
 		Application.nextItem('right');

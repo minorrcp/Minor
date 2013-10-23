@@ -71,6 +71,10 @@ body
 	background-size: cover;
 }
 
+.comp_panel{
+    float: right;
+}
+
 .frame .panel
 {
     border-radius: 30px;
@@ -93,14 +97,14 @@ font-size: 0.75em;
     margin-top:10px;
 }
 
-.panel .title
+.panel .title, .panel .comp_title
 {
     font-family: 'league gothic';
     text-transform: uppercase;
 	color: #444;
 	font-size: 21px;
 }
-.panel .place
+.panel .place, .panel .comp_place
 {
 	color: #444;
 
@@ -119,12 +123,24 @@ font-size: 0.75em;
     font-style: italic;
 
 }
-.panel .text
+.panel .text,
 {
 	color: #666;
 	font-size: 15px;
 }
 
+.panel a#slide_comp{
+    font-size: 0.75em;
+    float: right;
+    font-weight: bold;
+}
+.panel a#slide_comp span{
+    font-size: 2em;
+    vertical-align:middle;
+}
+.comp{
+    display: none;
+}
 .panel .fact-text
 {
 	color: #666;
@@ -169,6 +185,29 @@ font-size: 0.75em;
 	height: 1080px;
 	top: 550px;
 	left: 1050px;
+}
+
+.tree {
+	background: url('../img/boompje.png') no-repeat;
+	background-size: 15%;
+	width: 834px;
+	height: 1064px;
+}
+
+#tree1 {
+	top: 420px;
+	left: 673px;
+	transform: rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+}
+
+#tree2 {
+	top: 960px;
+	left: 580px;
+	transform: rotate(162deg);
+	-webkit-transform:rotate(162deg);
+	-moz-transform:rotate(162deg);
 }
 
 #diksteBoom {
@@ -282,6 +321,7 @@ font-size: 0.75em;
 .weather {
     font-family: 'league gothic';
     font-size: 19px;
+	min-width: 50px;
 }
 .weather-text {
     font-family: 'league gothic';
@@ -294,6 +334,7 @@ font-size: 0.75em;
 .weather-rain {
 	display: none;
 	background-image: url('../img/weer/regen_background.png');
+	opacity: 0.5;
 }
 
 .weather-sun {

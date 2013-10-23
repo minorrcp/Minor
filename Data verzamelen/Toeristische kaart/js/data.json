@@ -131,7 +131,17 @@
       "fact3":"",
       "toeristen_tekst":"De oudste molen van Nederland is gebouwd voor 1441 en is de Torenmolen in Zeddam. Deze molen is hiermee ook meteen de oudste werkende molen van de wereld. De Torenmolen in Zeddam is de enige nog wekende, middeleeuwse Torenmolen in Nederland. Over deze molen kan er bijna een geschiedenis boek geschreven worden. In Torenmolen is al vele malen gerestaureerd geweest, en staat in de top 100 van de Nederlandse monumentenlijst. Het is nog steeds mogelijk de Torenmolen te bezoeken, en een rondleiding te volgen.\r\n\r\n",
       "yahooweatherCode":"734979",
-      "comparison":true
+      "comparison":{
+          "id":"99",
+          "id_nl":"10",
+          "categorie":"Oudste molen",
+          "land":"Nederland",
+          "plaats":"Zeddam",
+          "naam":"De Torenmolen",
+          "fact1":"1441",
+          "fact2":"",
+          "toeristen_tekst":"De Torenmolen is ook wereldwijd de oudste molen."
+      }
    },
    {
       "id":"8",
@@ -173,12 +183,12 @@
          "id":"5",
          "id_nl":"5",
          "categorie":"Kleinste dorp",
-         "land":"Kroati",
-         "plaats":"Hum",
-         "naam":"",
+         "land":"Kroatië",
+         "plaats":"Kroatië",
+         "naam":"Hum",
          "fact1":"16 inwoners",
          "fact2":"",
-         "toeristen_tekst":"Hum, diep verscholen in de binnenlanden van de Kroatische regio Istri?, telt volgens de laatste cijfers zestien inwoners, maar heeft alles wat je nodig hebt om een echt dorp te zijn. Ze spreken er zelfs een eigen taal. Hum zou volgens het Guiness Book of Records het kleinste dorp ter wereld zijn. Hum heeft een eigen burgemeester, winkels, een gezien de omvang van het dorp belachelijk grote kerk, een restaurant en een kroeg, kortom alle voorzieningen die je nodig hebt om een dorp te zijn. Je kunt er ook nog kamers huren. Tot voor kort was het dorp nog een postkantoor en een school rijk, maar die zijn inmiddels verplaatst naar een nabijgelegen dorp."
+         "toeristen_tekst":"Hum, diep verscholen in de binnenlanden van de Kroatische regio Istrië, telt volgens de laatste cijfers zestien inwoners, maar heeft alles wat je nodig hebt om een echt dorp te zijn. Ze spreken er zelfs een eigen taal. Hum zou volgens het Guiness Book of Records het kleinste dorp ter wereld zijn. Hum heeft een eigen burgemeester, winkels, een gezien de omvang van het dorp belachelijk grote kerk, een restaurant en een kroeg, kortom alle voorzieningen die je nodig hebt om een dorp te zijn. Je kunt er ook nog kamers huren. Tot voor kort was het dorp nog een postkantoor en een school rijk, maar die zijn inmiddels verplaatst naar een nabijgelegen dorp."
       }
    },
    {
@@ -223,7 +233,7 @@
          "categorie":"Stilste plek",
          "land":"Verenigde Staten",
          "plaats":"Minnesota",
-         "naam":"",
+         "naam":"Dode kamer",
          "fact1":"-9 Decibel",
          "fact2":"",
          "toeristen_tekst":"Op de stilste plek op aarde blijkt dat stilte niet bestaat. In de geluiddichte 'dode kamer' in Minnesota hoor je je hartslag, het gegorgel van je ingewanden, het bloed dat door je aderen stroomt... Gekmakend. Volgens het Guinness Book of Records is het de stilste plek op aarde. In deze rumoerige tijden moet dat velen paradijselijk in de oren klinken, maar dat is het niet. Geen mens houdt het lang vol in de zogeheten 'dode kamer' van de universiteit van Minnesota, het record staat op drie kwartier."
