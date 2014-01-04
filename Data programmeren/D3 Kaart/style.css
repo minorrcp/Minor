@@ -1,0 +1,41 @@
+body
+{
+	background: #aaa;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -285px 0 0 -320px;
+	padding: 20px;
+	width: 600px;
+	height: 530px;
+	background: #fff;
+	border-radius: 20px;
+}
+.title
+{
+	color: #000;
+	font-size: 26px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.image
+{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
+.label
+{
+	position: absolute;
+	color: #666;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+	background: #fff;
+	padding: 5px 10px;
+	border: 1px rgba(0, 0, 0, 0.8) solid;
+	border-radius: 10px;
+}
