@@ -1,0 +1,208 @@
+* {
+}
+body {
+	background: #f0f0f0;
+}
+.title
+{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -280px;
+	color: #333;
+	font-size: 24px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.source
+{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: 254px;
+	color: #666;
+	font-size: 14px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.legend
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	margin-left: 111px;
+	margin-top: 57px;
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+}
+.legend .color
+{
+	position: relative;
+	width: 24px;
+	height: 12px;
+	float: left;
+	cursor: pointer;
+}
+.legend .color:not(:last-child)
+{
+	/*margin-bottom: 2px;*/
+}
+.legend .color:not(:nth-child(5n-4))
+{
+	margin-left: 7px;
+}
+.legend .color:nth-child(1n+6)
+{
+	margin-top: 6px;
+}
+.image
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 352px;
+	height: 452px;
+	margin-left: -301px;
+	margin-top: -226px;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.image .row
+{
+	position: relative;
+	margin-top: -20px;
+	width: 100%;
+	height: 56px;
+}
+.triangle-down
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-top: 28px solid white;
+}
+.triangle-down-move
+{
+	-webkit-animation: animationMoveDown 1s ease-in-out infinite;
+}
+.number-down
+{
+	position: absolute;
+	width: 30px;
+	top: -27px;
+	left: -15px;
+	color: #000;
+	font-size: 12px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.triangle-up
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 28px solid white;
+}
+.triangle-up-move
+{
+	-webkit-animation: animationMoveUp 1s ease-in-out infinite;
+}
+.number-up
+{
+	position: absolute;
+	width: 30px;
+	top: 12px;
+	left: -15px;
+	color: #000;
+	font-size: 12px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.time
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 100px;
+	margin-left: 111px;
+	margin-top: -138px;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+}
+.time .text, .legend .text
+{
+	position: absolute;
+	top: -30px;
+	margin-left: -20px;
+	width: 100%;
+	height: 40px;
+	color: #333;
+	font-size: 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+.time .button-up, .time .button-down
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -44px;
+	width: 0;
+	height: 0;
+	border-left: 44px solid transparent;
+	border-right: 44px solid transparent;
+	cursor: pointer;
+}
+.time .year
+{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	height: 20px;
+	color: #000;
+	font-size: 16px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.time .button-up
+{
+	top: 10px;
+	border-bottom: 28px solid gray;
+}
+.time .button-up:active
+{
+	border-bottom-color: #666;
+}
+.time .button-down
+{
+	bottom: 10px;
+	border-top: 28px solid gray;
+}
+.time .button-down:active
+{
+	border-top-color: #666;
+}
+@-webkit-keyframes animationMoveUp
+{
+	0%   { border-right: 22px solid transparent; border-left: 22px solid transparent; margin-left: 0px; }
+	/*50%  {  opacity: 0.9; border-right: 22px solid transparent; border-right-width: 18px; border-left-width: 18px; border-bottom-width: 35px; margin-left: 4px; margin-top: -7px; }*/
+	50%	 { opacity: 0.8; }
+	100% { border-right: 22px solid transparent; border-left: 22px solid transparent; margin-left: 0px; }
+}
+@-webkit-keyframes animationMoveDown
+{
+	0%   { border-right: 22px solid transparent; border-left: 22px solid transparent; margin-left: 0px; }
+	/*50%  {  opacity: 0.9; border-right: 22px solid transparent; border-right-width: 18px; border-left-width: 18px; border-top-width: 35px; margin-left: 4px; margin-top: 0px; }*/
+	50%  { opacity: 0.8; }
+	100% { border-right: 22px solid transparent; border-left: 22px solid transparent; margin-left: 0px; }
+}
